@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cad6c969-edab-4956-a120-aab47c904c4a" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2yP3faciI0MF3GIBM0gJyLpdrvs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/This PC/Desktop/LGN/CODEGYM/modue 1/bai_tap/MO1DEMO/MODULE1_AGIAN/ss13_mang-day2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\This PC\Desktop\LGN\CODEGYM\modue 1\bai_tap\MO1DEMO\MODULE1_AGIAN\ss13_mang-day2" />
+      <recent name="C:\Users\This PC\Desktop\LGN\CODEGYM\modue 1\bai_tap\MO1DEMO\MODULE1_AGIAN\ss12_mang-day1" />
+      <recent name="C:\Users\This PC\Desktop\LGN\CODEGYM\modue 1\bai_tap\MO1DEMO\MODULE1_AGIAN\ss11_cau_truc_lap" />
+      <recent name="C:\Users\This PC\Desktop\LGN\CODEGYM\modue 1\bai_tap\MO1DEMO\MODULE1_AGIAN\swichcase  + sum" />
+      <recent name="C:\Users\This PC\Desktop\LGN\CODEGYM\modue 1\bai_tap\MO1DEMO\MODULE1_AGIAN\ss10_cau_truc_lap" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-WS-251.26094.131" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cad6c969-edab-4956-a120-aab47c904c4a" name="Changes" comment="" />
+      <created>1749722485071</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749722485071</updated>
+      <workItem from="1749722486262" duration="36000" />
+      <workItem from="1751940805866" duration="2405000" />
+      <workItem from="1751950242612" duration="12324000" />
+      <workItem from="1752025196857" duration="16676000" />
+      <workItem from="1752102442845" duration="1926000" />
+      <workItem from="1752110151499" duration="708000" />
+      <workItem from="1752112934100" duration="23497000" />
+      <workItem from="1752209090968" duration="10170000" />
+      <workItem from="1752456577313" duration="740000" />
+      <workItem from="1752458473685" duration="5189000" />
+      <workItem from="1752464234707" duration="19714000" />
+      <workItem from="1752539871740" duration="1296000" />
+      <workItem from="1752562764894" duration="7622000" />
+      <workItem from="1752721257849" duration="6703000" />
+      <workItem from="1752728133597" duration="202000" />
+      <workItem from="1752734313000" duration="765000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/chuyen doi tien te/ungdungchuyendoitiente.html</url>
+          <line>48</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
