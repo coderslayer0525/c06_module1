@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <th>Amount
+        <input id="ezMoney" type="number" placeholder="vui long nhap so tien">
+        <th>From Currency
+        <select id="mnc">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
+            <option value="RMB">RMB</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+        </select>
+        </th>
+    <th>To Currency
+        <select id="cmn">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
+            <option value="RMB">RMB</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+        </select>
+    </th>
+        <th>
+            <button id="btn">convert</button>
+        </th>
+</table>
+<p id="result"></p>
+<script>
+     let btn = document.getElementById("btn");
+    btn.addEventListener("click", convert);
+    function convert() {
+        let amount = parseFloat(document.getElementById("ezMoney").value);
+        let fromCurrency = document.getElementById("mnc").value;
+        let toCurrency = document.getElementById("cmn").value;
+        let result = "";
+
+        if (!isNaN(amount) && amount > 0) {
+            if (fromCurrency == "VND" && toCurrency == "USD") {
+                result = "result" + (amount * 23000) + "$";
+            } else if (fromCurrency == "VND" && toCurrency == "JPY") {
+                result = "result" + (amount * 23000) + "JPY"
+            } else if (fromCurrency == "VND" && toCurrency == "RMB") {
+                result = "result" + (amount * 23000) + " RMB"
+            } else if (fromCurrency == "VND" && toCurrency == "GBP") {
+                result = "result" + (amount * 23000) + "GBP"
+
+            } else {
+                result = " nhập số hợp lệ ";
+            }
+        }
+        document.getElementById("result").innerText = result;
+    }
+
+</script>
+</body>
+</html>

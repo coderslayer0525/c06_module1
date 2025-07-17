@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Phiếu yêu cầu dịch vụ</title>
+</head>
+<body>
+<form id="customerForm">
+    <h2> MẪU THU THẬP, MÔ PHỎNG DỮ LIỆU KHÁCH NHẬP</h2>
+        <input type="checkbox"></input>
+        <input type="checkbox">Đơn vị</input>
+        )
+    </h2>
+    <h4>Phần nhập dành cho khách hàng:</h4>
+    Ông/Bà:<input type="text" id="name">
+    CCCD : <input type="number"><br></br>
+    Tlphone:<input type="tel" id="phone">
+    Email : <input type="text"><br></br>
+    <h3> </h3>
+    <label for="service">Mảng sự kiện :</label>
+    <select id="service" required>
+        <option value="">-- Chọn một kiểu --</option>
+        <option value="Doanh nghiệp">Doanh nghiệp</option>
+        <option value="Giáo dục">Giáo dục</option>
+        <option value="Giải trí,game show">Giải trí,game show</option>
+        <option value="Tiếp thị, quảng bá">Tiếp thị, quảng bá</option>
+        <option value="Gây quỹ,thiện nguyện">Gây quỹ, thiện nguyện</option>
+    </select>
+    <label for="stage">Quy mô tổ chức:</label>
+    <select id="stage" required>
+        <option value="Nhỏ( < 150 người)">Nhỏ( < 150 người)</option>
+        <option value="Vừa( 150-300 người)">Vừa( 150-300 người) </option> "
+        <option value="Lớn( >500 người)">Lớn( >500 người)</option>
+    </select>
+    <br></br>
+    Khác(vui lòng nêu rõ chi tiết yêu cầu) :<textarea></textarea>
+
+    <h4>+Hình thức tổ chức:<select>
+        <option value="Ngắn ngày">Ngắn ngày</option>
+        <option value="Dài ngày">Dài ngày</option>
+    </select>
+    </h4>
+    <input type="checkbox">offLine</input>
+    <input type="checkbox">online</input>
+    <input type="checkbox">kết hợp cả 2</input><br>
+    <br>
+    +Ngân sách dự kiến : <input type="number">VND</input>
+    <br><br>
+    +Vốn Khả dụng : <input type="number">VND (là số tiền có thể  cọc,ứng ngay khi ký hợp đồng)</input>
+</form>
+</body>
+
+</html>

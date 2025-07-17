@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>10 phan tu :1,2,3,4,5,6,7,8,9,10</h2>
+<script>
+    let mang = [1,2,3,4,5,6,7,8,9,10];
+    let V = +prompt("nhap V :");
+    let vindex = mang.indexOf(V);
+    for (let i = vindex; i < mang.length; i++){
+    mang[i]=mang[i+1];
+    }
+    mang[mang.length-2]=0;
+    document.write(mang);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập vào một chuỗi ký tự (ví dụ: a-b-c-d):</p>
+<input type="text" id="inputString">
+<button onclick="change()">Thay thế</button>
+
+<p id="result"></p>
+<script>
+    function change() {
+        let input = document.getElementById("inputString").value;
+        let arr = input.split("");
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === '-') {
+                arr[i] = '_';
+            }
+        }
+        let result = arr.join("");
+        document.getElementById("result").innerHTML = (`Chuỗi sau khi thay thế: ${result}`);
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkMonth(num1, year) {
+        switch (num1) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                alert(`Tháng ${num1} là tháng có 31 ngày trong năm ${year}`);
+                break;
+            case 2:
+                if (isLeapYear(year)) {
+                    alert(`Tháng ${num1} là tháng có 29 ngày trong năm ${year}`);
+                    break;
+                } else {
+                    alert(`Tháng ${num1} là tháng có 28 ngày trong năm ${year}`);
+                    break;
+                }
+
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                alert(`Tháng ${num1} là tháng có 30 ngày trong năm ${year}`);
+                break;
+            default:
+                alert(`Không có tháng này!`)
+        }
+
+    }
+
+    function isLeapYear(num2) {
+
+        if (num2 % 4 === 0 && num2 % 100 !== 0 || num2 % 400 === 0) {
+            return true;
+        }
+        return false;
+    }
+
+    let year = +prompt(`Mời nhập vào năm`);
+    while (true) {
+        if (!isNaN(year)) {
+            let resultY = isLeapYear(year);
+            if (resultY) {
+                alert(`Năm ${year} là năm nhuận có 366 ngày.`)
+            } else {
+                alert(`Năm ${year} không phải là năm nhuận có 365 ngày.`)
+            }
+            break;
+        } else {
+            alert("Mời bạn nhập số hợp lệ.");
+        }
+    }
+    let month = +prompt(`Mời nhập vào tháng`);
+    while (true) {
+        if (!isNaN(month)) {
+            checkMonth(month, year);
+            break;
+        } else {
+            alert(`Mời bạn nhập số hợp lệ.`)
+        }
+    }
+</script>
+</body>
+</html>
+</body>
+</html>

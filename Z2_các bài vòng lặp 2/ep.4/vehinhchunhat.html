@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doc = 3;
+    let ngang = 7;
+
+    for (let i = 0; i < doc; i++) {
+        for (let j = 0; j < ngang; j++) {
+            if (i == 0|| i == doc-1 || j == 0 || j == ngang - 1) {
+                document.write("*");
+            } else {
+                document.write("&nbsp ");
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+
+</body>
+</html>

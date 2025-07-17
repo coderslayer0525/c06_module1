@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinhBMI</title>
+</head>
+<body>
+<script>
+    let weigh = +prompt("nhapcannang");
+    let height = +prompt("nhapchieucao");
+    let bmi = weigh / (height * height);
+    if (bmi < 18.5) {
+        alert("maythatgay");
+    } else if (bmi < 25) {
+        alert("cungbinhthuong");
+    } else if (bmi < 30) {
+        alert("anhoinhieuroiday")
+    }else {
+        alert("FATMAN")
+    }
+</script>
+
+</body>
+</html>

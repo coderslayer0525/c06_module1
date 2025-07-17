@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let m = + prompt("nnhập số hàng (m): ");
+  let n = + prompt("nnhập số cột (n): ");
+
+  let arr = [];
+  for(let i = 0; i < m ; i++){
+    arr[i]= [];
+    for(let j = 0; j < n ; j++){
+      arr[i][j] = +prompt(`nhập giá trị từ ${i} ${j}`);
+    }
+  }
+    document.write(arr.join("<br>"));
+</script>
+</body>
+</html>

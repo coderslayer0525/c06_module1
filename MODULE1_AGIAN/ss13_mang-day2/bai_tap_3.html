@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m = +prompt("nhập số hàng(m): ");
+    let n = +prompt("nhap so cot(n): ");
+
+    let arr = [];
+
+    function isDuplicate(value, array) {
+        for (let m of array) {
+            if (m.includes(value)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    for (let i = 0; i < m; i++) {
+        arr[i] = [];
+        for (let j = 0; j < n; j++) {
+            let value;
+            do {
+                value = +prompt(`nhập giá trị từ ${i} ${j}`);
+                if (isDuplicate(value, arr)) {
+                    alert("đã tồn tại! nhập lại");
+                }
+            } while (isDuplicate(value, arr));
+            arr[i][j] = value;
+        }
+    }
+    document.write(arr.join(" | "));
+</script>
+</body>
+</html>

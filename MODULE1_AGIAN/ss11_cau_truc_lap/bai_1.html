@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = prompt("nhập bất kỳ");
+    let i = 0;
+    while ( i < arr.length) {
+        if(i === 1){
+            alert("phần tử ở vị trí thứ 2 là :"+ arr[i]);
+            break;
+        }
+        i++;
+    }
+    //ìf (cha - con !== 25) {
+    alert("Tuổi cha phải hơn con đúng 25 tuổi.");
+    } else {
+        let year = 0;
+        while (cha + year !== 2 * (con + year)) {
+            year++;
+            if (year > 100) {
+                alert("Không tìm được kết quả hợp lý.");
+                break;
+            }
+        }
+        if (year <= 100) {
+            alert(year + " năm nữa thì tuổi cha sẽ gấp đôi tuổi con.");
+        }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>maytinhkhohieu</title>
+</head>
+<body>
+<input type="number" id="numA">
+<input type="number" id="numB">
+<br>
+
+<button onclick="caculate('+')">cong</button><br>
+<button onclick="caculate('-')">tru</button><br>
+<button onclick="caculate('*')">nhan</button><br>
+<button onclick="caculate('/')">chia</button><br>
+
+
+</body>
+<script>
+
+  function caculate(operator) {
+    let a = +document.getElementById("numA").value;
+    let b = +document.getElementById("numB").value;
+    switch (operator) {
+      case '+':
+        alert(a + b);
+        break;
+        case '-':
+          alert(a - b);
+          break;
+          case '*':
+            alert(a * b);
+            break;
+            case '/':
+              alert(a / b);
+              break;
+    }
+  }
+</script>
+</html>

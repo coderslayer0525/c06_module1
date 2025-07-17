@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>isosceles_right_triangle</title>
+</head>
+<body>
+    <input type="number" id="a" placeholder="cạnh a">
+    <input type="number" id="b" placeholder="cạnh b">
+    <input type="number" id="c" placeholder="cạnh c">
+    <button type="button" id="abc">Nhập</button>
+<script>
+    let aSide = document.getElementById("a");
+    let bSide = document.getElementById("b");
+    let cSide = document.getElementById("c");
+    let Side = document.getElementById("abc");
+    Side.addEventListener("click", submit);
+    function submit() {
+        let a = parseFloat(aSide.value);
+        let b = parseFloat(bSide.value);
+        let c = parseFloat(cSide.value);
+        if ((a + b > c) && (a + c > b) && (b + c > a)) {
+            let isosCeles = false;
+
+            if ((a * a) + (b * b) == (c * c) ||
+            (a * a) + (c * c) == (b * b) ||
+            (b * b) + (c * c) == (a * a)) {
+                isosCeles = true;
+            }
+            if (isosCeles) {
+                alert (" tam giac vuong can ");
+            } else {
+                alert(" không phải tam giác vuông cân");
+            }
+        } else {
+            alert( " không phải tam giác");
+        }
+        }
+</script>
+</body>
+</html>

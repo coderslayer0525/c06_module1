@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let input = prompt("Tên phải trùng với thông tin in trên thẻ ngân hàng:");
+  let result = "";
+  for (let i = 0; i < input.length; i++){
+    let chu = input[i];
+    if (chu === chu.toLowerCase()){
+      result += chu.toUpperCase();
+    }else{
+      result += chu.toLowerCase();
+    }
+  }
+  document.write("Chủ tài khoản : " + result);
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>nhập số lớn hơn 0</h2>
+<input type="number" id="numberInput">
+<button onclick="kiemTraSoHoanHao()">gửi</button>
+<p id="result"></p>
+<script>
+    function laSoHoanHao(n) {
+        if (n <= 0) return false;
+        let tongUoc = 0;
+        for (let i = 1; i <= n / 2; i++) {
+            if (n % i === 0) {
+                tongUoc += i;
+            }
+        }
+        return tongUoc === n;
+    }
+    function kiemTraSoHoanHao() {
+        const so = parseInt(document.getElementById("numberInput").value);
+        const ketQua = document.getElementById("result");
+        if (isNaN(so) || so <= 0) {
+            ketQua.innerText = "nhapsolonhon0.";
+            return;
+        }
+        if (laSoHoanHao(so)) {
+            ketQua.innerText = so + " hoàn hảo.";
+        } else {
+            ketQua.innerText = so + " không hoàn hảo.";
+        }
+    }
+</script>
+
+</body>
+</html>

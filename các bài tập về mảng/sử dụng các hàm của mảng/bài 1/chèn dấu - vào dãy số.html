@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chèn dấu - vào dãy so</title>
+</head>
+<body>
+<script>
+  let input = prompt("025468672211: ");
+  let result = input[0];
+  for (let i = 1; i < input.length; i++) {
+    if (parseInt(input[i - 1]) % 2 == 0 && parseInt(input[i]) % 2 == 0) {
+      result += "-" + input[i];
+    } else result += input[i];
+  }
+  document.write("number : " + result);
+</script>
+
+</body>
+</html>

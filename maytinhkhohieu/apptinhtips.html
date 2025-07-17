@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TIP CALCULATOR</title>
+</head>
+<body>
+<form style="border: 5px solid black">
+<h2>How much was your bill?<br>
+<input id="num" type="number"> $
+</h2>
+<h2>How was your service? <br>
+    <select id="emojLevel">
+        <option id="tip1" value="0,3">Outstanding: 30%</option>
+        <option id="tip2" value="0,2">Good: 20%</option>
+        <option id="tip3" value="0,15">It was OK: 15%</option>
+        <option id="tip4" value="0,1">BAD: 10%</option>
+        <option id="tip5" value="5">Terrible: 5%</option>
+    </select>
+</h2>
+<h2>How many people are sharing the bill?</h2>
+<input id="some" type="number"> people<br><br>
+<button id="abc" style="margin-left: 150px" onclick="submit">CALCULATE</button>
+    <p style ="text-align: center">TIPAMOUNT</p>
+    <p id ="result"></p>
+    <p style="text-align: center">each</p>
+
+    <script>
+        let invoice = document.getElementById("num");
+        let yourService = document.getElementById("emojLevel");
+        let People = document.getElementById("some");
+        let abc = document.getElementById("abc");
+        abc.addEventListener("click", onclick);
+        function submit(){
+            let invoice = document.getElementById("num").value;
+            let yourService = document.getElementById("emojLevel").value;
+            let People = document.getElementById("some").value;
+            let result;
+
+            if(isNaN(invoice) || isNaN(yourService) || isNaN(People) || People <= 0 ) {
+                document.getElementById("result").innerText = "Điền đây đủ thông tin. ";
+                return;
+            }
+            const invoice = num * yourService;
+            const result =  invoice / People;
+
+            document.getElementById("result").innerText = ${}
+        }
+    </script>
+</form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form id="serviceForm">
+    <label for="name">Họ và tên:</label>
+    <input type="text" id="name" required>
+
+    <label for="phone">Số điện thoại:</label>
+    <input type="tel" id="phone" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email">
+
+    <label for="service">Loại dịch vụ yêu cầu:</label>
+    <select id="service" required>
+        <option value="">-- Chọn dịch vụ --</option>
+        <option value="Tư vấn">Tư vấn</option>
+        <option value="Sửa chữa">Sửa chữa</option>
+        <option value="Lắp đặt">Lắp đặt</option>
+        <option value="Khác">Khác</option>
+    </select>
+
+    <label for="notes">Ghi chú thêm:</label>
+    <textarea id="notes" rows="4"></textarea>
+
+    <button type="submit">Gửi yêu cầu</button>
+</form>
+
+<div class="result" id="resultBox"></div>
+</body>
+</html>

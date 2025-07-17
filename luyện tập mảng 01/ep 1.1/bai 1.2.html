@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Mảng 10 số: 1,2,3,5,10,11,12,13,14,15</h2>
+<script>
+    let mang = [1,2,3,5,10,11,12,13,14,15];
+    let maxValue = mang[0];
+    let maxIndex = 0;
+    for (let i = 1; i < mang.length; i++) {
+        if (mang[i] > maxValue) {
+            maxValue = mang[i];
+            maxIndex = i;
+        }
+    }
+    document.write("gia tri lon nhat là:" +maxValue+"<br>");
+    document.write("vi tri:" +maxIndex);
+</script>
+</body>
+</html>

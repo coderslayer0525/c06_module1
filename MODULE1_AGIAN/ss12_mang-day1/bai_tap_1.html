@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>63
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n = +prompt(" nhập vào đây số lượng phần tử");
+        if(isNaN(n)||n <=0){
+        alert("không hợp lệ : chỉ nhập số  ")
+    }
+        for(let i= 0; i <n; i ++) {
+            let value = +prompt("nhập vào :" + i + 1);
+            arr.push(value);
+        }
+        alert(arr);
+
+        let sum1=0;
+        let sum2=0;
+        for(let i = 0; i < arr.length; i++){
+            if (arr[i]% 2 == 0){
+                sum1++;
+            }else sum2++;
+        }
+        if(sum1==sum2){
+            alert("OK");
+        }else alert("NO");
+</script>
+</body>
+</html>

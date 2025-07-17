@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let arr = [];
+    let n = +prompt(" nhập vào đây số lượng phần tử");
+    if (isNaN(n) || n <= 0) {
+        alert("không hợp lệ : chỉ nhập số  ");
+    } else for (let i = 0; i < n; i++) {
+        let x = +prompt("nhập vào :" + (i + 1));
+        arr.push(x);
+    }
+    alert("phần tử đã nhập:" + arr);
+    let chinhPhuong = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] >= 0 && Math.sqrt(arr[i]) % 1 === 0) {
+            chinhPhuong.push(arr[i]);
+            alert("so chinh phuong" + chinhPhuong.join(","));
+        } else {
+            alert("khong co so chinh phuong nao");
+        }
+    }
+</script>
+
+</body>
+</html>

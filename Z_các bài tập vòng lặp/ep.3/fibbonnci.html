@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>tổng 20 số đầu trong dãy finbonacci:</h2>
+<p id="tongfibonacci"></p>
+<script>
+    let fibonacci = [0,1]
+    let tongfibonacci = 0;
+    for (let i = 2; i < 20; i++){
+        fibonacci[i] = fibonacci[i-1] + fibonacci[i-2];
+    }
+   for (let i = 0; i < 20; i++){
+       tongfibonacci += fibonacci[i];
+   }
+   document.getElementById("tongfibonacci").innerText = "đáp án: " + tongfibonacci;
+    
+</script>
+</body>
+</html>

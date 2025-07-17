@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUAN LY SINH VIEN</title>
+</head>
+<body>
+<script>
+    let flag =true;
+     let soThuTu;
+        while (flag) {
+             soThuTu = +prompt("Nhap so de chon chuc nag\n1. Hien thi danh sach sinh vien\n2. them moi sinh vien\n3. xoa sinh vien\n4. thoat chuong trinh");
+
+            switch (soThuTu) {
+                case 1:
+                    alert("Hiển thị danh sách sinh viên");
+                    break;
+                case 2:
+                    alert("Thêm mới sinh viên");
+                    break;
+                case 3:
+                    alert("Xóa sinh viên");
+                    break;
+                default:
+                    let conf = confirm("banj cos muon thoat khoong");
+                    if (conf){
+                        flag =false;
+                        alert("da thoat");
+                    }else {
+                        alert("khong thoat");
+                    }
+            }
+        }
+</script>
+
+
+</body>
+</html>

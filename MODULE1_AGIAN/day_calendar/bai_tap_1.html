@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    let arr = [];
+    let n = +prompt("Nhập vào số lượng phần tử:");
+
+    if (isNaN(n) || n <= 0) {
+        alert("Không hợp lệ: chỉ nhập số dương.");
+    } else {
+        for (let i = 0; i < n; i++) {
+            let x = +prompt("Nhập vào phần tử thứ " + (i + 1));
+            arr.push(x);
+        }
+
+        alert("Các phần tử đã nhập: " + arr.join(", "));
+
+        let index = [];
+        let sum = 0;
+
+        for (let i = 0; i < arr.length; i++) {
+            if (i % 2 !== 0) {
+                if (arr[i] % 2 === 0) {
+                    sum += arr[i];
+                }
+            }
+        }
+
+        alert("Tổng các số chăn nằm ở vị trí lẻ là: " + sum);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quanlynhanvien</title>
+</head>
+<body>
+<form>
+<label>Nhập lương: </label>
+<input type="number" id="salary" placeholder="Lương"><br><br>
+<label>Nhập giờ làm việc: </label>
+<input type="number" id="hours" placeholder="Giờ làm việc"><br><br>
+<button id="btn" type="button">Tính thưởng</button>
+</form>
+<p id="result"></p>
+<script>
+    let btn = document.getElementById("btn");
+    btn.addEventListener("click" , tinhthuong);
+    function  tinhthuong (){
+        let finance = parseFloat(document.getElementById("salary").value);
+        let workHours = parseFloat(document.getElementById("hours").value);
+        let reward = 0 ;
+
+        if (workHours >= 200) {
+            reward = finance * 0.2;
+        } else if (workHours >= 100 && workHours < 200) {
+            reward = finance * 0.1;
+        } else{
+            reward = 0;
+        }
+            document.getElementById("result").innerText= reward;
+    }
+</script>
+
+</body>
+</html>

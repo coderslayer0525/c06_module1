@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzjFzLQEtnAEXTtmc5x9z--mra3I7Dzxq6ZQ&s"
+     alt="">
+<body>
+<form id="infoForm">
+    Ông/Bà: <input type="text" id="name"><br>
+    CCCD: <input type="text" id="idcard"><br>
+    SĐT: <input type="text" id="phone"><br>
+    Email: <input type="text" id="text"><br>
+    Dịch vụ: <input type="text" id="service"><br>
+    Loại sự kiện:
+    <input type="radio" name="eventType" value="Offline"> Offline
+    <input type="radio" name="eventType" value="Online"> Online<br>
+    Chọn thanh toán:
+    <select id="THANH">
+        <option value="Tiền mặt">Tiền mặt</option>
+        <option value="Chuyển khoản">Chuyển khoản</option>
+    </select><br>
+    Ngân sách: <input type="text" id="budget"><br>
+    Vốn: <input type="text" id="capital"><br>
+    <button type="button" onclick="sendInfo()">Gửi</button>
+    <div id="KetQua"></div>
+</form>
+<script src="form-handler.js"></script>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+<script>
+    let menu ="";
+    let soThuTu;
+    let billValue = 0;
+    do {
+        soThuTu = +prompt(".---menu----\n1. Cafe : 10k\n2. Ca Cao: 15k\n3. Nuoc cam: 20k\n4. tính tiền:\n5. Hủy oder. ");
+        switch (soThuTu) {
+            case 1  :
+                billValue += 10;
+                menu += "Cafe - 10k\n";
+                alert("cafe  giá :" + 10 + "K"+"\n Tổng tiền "+billValue);
+                confirm("đồng ý với cafe ?");
+
+                break;
+            case 2:
+                billValue += 15;
+                menu += "Ca Cao - 15k\n";
+                alert("cacao giá :" + 15 + "K"+"\n Tổng tiền "+billValue);
+                confirm("đồng ý với cacao?");
+                break;
+            case 3 :
+                billValue += 20;
+                menu +="nươc cam - 20k\n";
+                alert("nươc cam giá :" + 20 + "K"+"\n Tổng tiền "+billValue);
+                confirm("đồng ý voi nước cam ?");
+                break;
+            case 4 :
+                alert("tổng hoá đơn :\n " + menu +"..............\n Tổng cộng : " +  billValue + "K");
+                break;
+            default:
+                alert("cam on quy khach");
+                break;
+        }
+    } while (soThuTu !== 5);
+
+
+</script>
+
+</body>
+</html>

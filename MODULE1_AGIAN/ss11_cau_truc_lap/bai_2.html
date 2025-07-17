@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ABC</title>
+</head>
+<body>
+<script>
+    let dadAge = prompt("nhập tuổi cha");
+    let sonAge = prompt("nhập tuổi con");
+    if(dadAge - sonAge !==25){
+        alert("tuổi phải cách nhau 25 tuổi")
+    }else {
+        let year = 0;
+        while (dadAge  !== 2 * (sonAge + 25)) {
+            year++;
+            alert("sô tuổi" + dadAge);
+        }
+    }
+</script>
+
+</body>
+</html>

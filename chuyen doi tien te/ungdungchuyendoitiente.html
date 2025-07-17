@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChangeMoney</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>
+            <input type="number"id="amount">
+        </th>
+        <th>From Currency</th>
+        <th>
+            <select>
+                <option value="vietnam">VietNam</option>
+                <option value="USD">USD</option>
+            </select>
+        </th>
+        <th>To Currency</th>
+        <th>
+           <select>
+               <option value="vietnam">vietNam</option>
+               <option value="USD">USD</option>
+           </select>
+        </th>
+        <th>
+            <button id="btn">Convert</button>
+        </th>
+    </tr>
+</table>
+<p id="result"></p>
+<script>
+    let amount = document.getElementById("amount");
+    let btn = document.getElementById("btn");
+    btn.addEventListener("click", onClick);
+
+    function onClick(){
+        let amount = document.getElementById("amount").value;
+        let fromCurrency = document.getElementById("fromCurrency").value;
+        let toCurrency = document.getElementById("toCurrency").value;
+        let result;
+
+
+        if(!isNaN(amount) && amount > 0){
+            if(fromCurrency == VietNam && toCurrency == USD){
+                result = "result" +(amount / 25000)+"$";
+                if(fromCurrency == USD && tocurrency == VietNam)
+                    result = "result" +(amount * 25000)+"VND";
+            }else
+                alert("may phai chon dung don vi")
+            }
+
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let mang = ['a', '1', 'b', '3', 'c', '9', 'z', '0', '5', 'x'];
+  let kichthuoc = mang.length;
+  let demchuso = 0;
+  for(let i = 0; i < kichthuoc ; i++){
+    if(mang[i] >= '0' && mang[i] <='9') {
+      demchuso++;
+    }
+  }
+  document.writeln("Mảng ký tự: ", mang.join(', '),"<br>");
+  document.writeln("Kích thước mảng: ", kichthuoc,"<br>" );
+  document.writeln("Số ký tự là chữ số (0-9): ", demchuso );
+</script>
+</body>
+</html>

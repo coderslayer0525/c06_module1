@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="display"></p>
+<script>
+  let array = new Array(6);
+  for (let i = 0;i < array.length;i++){
+      array[i]= new Array(6);
+      for(let j = 0; j < array[i].length; j++){
+          array[i][j]= "";
+      }
+  }
+  let playerX = true;
+  display()
+  function display() {
+      let tableString =`<table border="5" style="border-collapse: collapse">`;
+      for(let i= 0; i < array.length; i++){
+          tableString +=`<tr>`;
+          for(let j= 0; j < array[i].length;j++){
+              tableString += `<td onclick="play(${i},${j})"
+               style="width: 50px; height: 50px; text-align: center; cursor: pointer">${array[i][j]}
+</td>;`
+          }
+          tableString += `</tr>`;
+      }
+      tableString +=`</table>`;
+      document.getElementById("display").innerHTML = tableString;
+  }
+  function play(i, j){
+      if(array[i][j] === ""){
+          if(playerX){
+              array[i][j] = "x";
+              if(checkWin("x")){
+                  alert("x is a winner");
+              }
+          }else {
+              array[i][j]= "o";
+              if(checkWin("o")){
+                  alert("o is a winner");
+              }
+          }
+          playerX = !playerX;
+          display();
+      }else {
+          alert("Ô nay đánh rồi!");
+      }
+      display();
+  }
+  function checkWin() {
+      for (let i = 0; i < array.length; i++) {
+          for (let j = 0; j < array[i].length; j++) {
+              if (array[i][j] === player) {
+                  if (j <= array[i].length - 3 &&
+                      array[i][j + 1] === player && array[i][j + 2] === player) {
+                      return true;
+                  }
+                  if (i <= array.length - 3 &&
+                      array[i + 1][j] === player &&
+                      array[i + 2][j] === player) {
+                      return true;
+                  }
+                  if (i <= array.length - 3 && j <= array[i].length - 3 &&
+                      array[i + 1][j + 1] === player &&
+                      array[i + 2][j + 2] === player) {
+                      return true;
+                  }
+                  if (i <= array.length - 3 && j >= 2 &&
+                      array[i + 1][j - 1] === player &&
+                      array[i + 2][j - 2] === player) {
+                      return true;
+                  }
+              }
+          }
+      }
+      return false;
+  }
+</script>
+</body>
+</html>

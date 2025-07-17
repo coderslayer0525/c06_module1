@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> phiếu thu thập</title>
+</head>
+<body>
+<div class="container">
+    <h2>Quản lý tiền gưi</h2>
+    <section class="add-list">
+        <button id="themSoTietKiem" onclick="themSoTietKiem()">Thêm</button>
+        <button id="xoaSoTietKiem" onclick="xoaSoTietKiem()">xóa</button>
+    </section>
+
+    <div>
+        <div>
+            <h2> DANH SÁCH KHCN </h2>
+    </div>
+        <table border="1" callspacing="0" callpadding="5">
+            <thread>
+                <tr>
+                    <th>MÃ KH</th>
+                    <th>Họ Tên</th>
+                    <th>CCCD</th>
+                    <th>Loại tiền gửi</th>
+                    <th>Số tiền gửi</th>
+                    <th>Ngày mở sổ</th>
+                </tr>
+            </thread>
+            <tbody id="listTable"></tbody>
+</table>
+    </div>
+</div>
+<script>
+    class SoTietKiem {
+        constructor(MÃ KH, Họ Tên, CCCD, Loại tiền gửi, Số tiền gửi, Ngày mở sổ ) {
+            this.MÃ KH = MÃ KH;
+            this.Họ Tên = Họ Tên;
+            this.CCCD = CCCD;
+            this.Loại tiền gửi = Loại tiền gửi;
+            this.Số tiền gửi = Số tiền gửi;
+            this.Ngày mở sổ = Ngày mở sổ;
+        }
+        hienthithongtin()
+    {
+        return `
+            Thông tin đã  nhập :
+            Mã KH: ${this.Mã KH},
+            Họ Tên : ${this.Họ Tên},
+            CCCD : ${this.CCCD},
+            Loại tiền gửi : ${this.Loại tiền gửi},
+            Số tiền gửi : ${this.Số tiền gửi} VND,
+            Ngày mở sổ : ${this.Ngày mở sổ}
+            `;
+         }
+    }
+
+    const danhSachSoTietKiem =[
+        new SoTietKiem(
+            "55555",
+            "Trương Tấn Hải",
+            "048094003362",
+            "có kỳ hạn",
+            200000000
+            "2025-04-02",
+        ),
+    new SoTietKiem(
+        "68879",
+        "Lê Văn Chánh",
+        "07284443338",
+        "không kỳ hạn",
+        50000000
+        "2024-01-01",
+
+    ),
+    ];
+    function themSoTietKiem() {
+        let Mã KH;
+        do {
+            Mã KH = prompt("Nhập Mã Số (5 ký tự): ");
+            if(!Mã Kh || Mã KH.length > 5) {
+                alert("Mã KH phải là dãy tối đa 5 ký tự!");
+            }
+            while (!Mã KH || Mã KH.length > 5 );
+            for(let i = 0; i < danhSachSoTietKiem.length; i++ ) {
+                if (danhSachSoTietKiem[i].Mã KH === Mã KH) {
+                    alert("Mã số trùng lặp trên hệ thống! ");
+                    return;
+                }
+            }
+            let LoaiTietKiem
+            do {
+                loaiTietKiem = prompt("nhập loại tiết kiem(tối đa 10 số"));
+                if (!loaiTietKiem || loaiTietKiem.length > 10) {
+                    alert("Loại tiết kiệm phải nhập 10 ký tự!");
+                }
+            } while (!loaiTietKiem || loaiTietKiem.length > 10);
+            let Họ Tên;
+            do {
+                Họ Tên = prompt("nhập Họ Tên Khách hàng(toi da 20 ky tu))";
+                if (!Họ Tên || Họ Tên.length > 30) {
+                    alert("tối đa 20 ký tự!");
+                }
+            } while (!Họ Tên || Họ Tên.length > 30);
+            let CCCD;
+            do {
+                CCCD = prompt("nhập CCCD( số):");
+                if(isNaN(CCCD) || !CCCD {
+                    alert("chỉ nhập số!");
+                }
+            } while (isNaN(CCCD) || !CCCD);
+            // let luong = parseFloat(document.getElementById("salary").value);
+           // let gioLam = parseFloat(document.getElementById("hours").value);
+            //let thuong = 0;
+
+            //if (gioLam >= 200) {
+               // thuong = 0.2 * luong;
+            //} else if (gioLam >= 100 && gioLam < 200) {
+                //thuong = 0.1 * luong;
+            //} else {
+              //  thuong = 0;
+        }
+    }
+</script>
+</body>
+</html>
