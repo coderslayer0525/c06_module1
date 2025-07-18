@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let arr = [];
+    let n = +prompt("so luong phan tu  : ");
+
+    if(isNaN(n) && n < 0) {
+        alert("khong hop le! chi nhap so duong");
+    } else {
+        for (let i = 0; i < n; i++) {
+            let x = +prompt("nhap vao phan tu thu :" + (i + 1));
+            arr.push(x);
+        }
+        alert("cac phan tu da nhap : " + arr.join(" , "));
+    }
+    function checkChan(x) {
+        return x % 2 === 0;
+    }
+    let soChan = arr.filter(checkChan);
+    alert("Các số chẵn là: " + soChan.join(", "));{
+    }
+
+
+</script>
+</body>
+</html>
