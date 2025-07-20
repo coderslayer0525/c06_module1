@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n = +prompt("nhập số lượng phần tử : ");
+
+    if (isNaN(n) || n <= 0) {
+        alert("không hợp lệ: chỉ nhập số");
+    } else {
+        for (let i = 0; i < n; i++) {
+            let x = +prompt(`nhâp phần tử ${i + 1}`);
+            arr.push(x);
+        }
+        alert("các phần tử trong mảng :" + arr.join(" ,"));
+    }
+    alert("mảng đã nhập :" + arr.join(" , "));
+
+    let moveForward = true;
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < arr[i - 1]) {
+            moveForward = false;
+            break;
+        }
+    }
+    if (moveForward) {
+        alert(" OK");
+    } else {
+        alert("NO");
+    }
+</script>
+
+
+</body>
+</html>
