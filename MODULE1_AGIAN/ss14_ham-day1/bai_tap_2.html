@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let arr = [];
+    let n = +prompt("so luong ky tu :");
+
+    if (isNaN(n) || n <= 0) {
+        alert("khoong hopp le");
+    } else {
+        for (let i = 0; i < n; i++) {
+            let x = prompt(`Nhập ký tự thứ ${i + 1}:`);
+            arr.push(x);
+        }
+        alert("cac phan tu trong mang : " + arr.join(" , "));
+    }
+    alert("Mảng ký tự vừa nhập: " + arr.join(" , "));
+
+    mangKyTu(arr);
+
+    function mangKyTu(mang) {
+        for (let i = 0; i < mang.length; i++) {
+            let kyTu = mang[i];
+            if (!isNaN(kyTu) && kyTu.trim() !== "") {
+                alert(`phan tu "${kyTu}" là so : 1`);
+            }
+            else {
+                alert(`phan tu "${kyTu}" la ky tu : 0`);
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

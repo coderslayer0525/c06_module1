@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    changeBinary;
+
+    function changeBinary(x) {
+        return x.toString(2);
+    }
+
+    let arr = [];
+    let num = +prompt(" nhap vao con so :");
+
+    if (isNaN(num) || num < 0) {
+        alert("phải nhâp số :");
+    } else {
+        for (let i = 0; i < num; i++) {
+            let x = +prompt("thêm phần tử : ");
+            arr.push(x);
+        }
+        alert("hàm truyền vào   : " + arr.join(" , "));
+    }
+    document.write("");
+    for (let i = 0; i < arr.length; i++) {
+        document.write(`${arr[i]} => ${changeBinary(arr[i])}<br>`);
+    }
+</script>
+</body>
+</html>
