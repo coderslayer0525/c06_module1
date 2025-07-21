@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(celisus){
+            this.celisus = celisus;
+        }
+        toFahrenheit() {
+            return (this.celisus * 1.8) + 32;
+    }
+        toKelvin() {
+            return this.celisus + 273;
+        }
+        setCelisus(celisus){
+           this.celisus= celisus;
+        }
+        getCelisus(celisus){
+            return this.celisus;
+        }
+    }
+    let c = +prompt("nhập độ c:");
+    let temp1 = new Temperature(c);
+    alert("từ độ C sang độ F :" + temp1.toFahrenheit()+" Độ F");
+    alert("từ độ C sang độ K :" + temp1.toKelvin() + " Độ K");
+</script>
+</body>
+</html>
