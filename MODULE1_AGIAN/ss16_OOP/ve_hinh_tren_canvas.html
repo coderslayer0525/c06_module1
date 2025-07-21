@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Rectangle {
+        constructor(length, width) {
+            this.length = length;
+            this.width = width;
+        }
+
+        getArea() {
+            return this.length * this.width;
+        }
+
+        getPerimeter() {
+            return 2 * (this.length + this.width);
+        }
+
+        getLength() {
+            return this.length;
+        }
+
+        getWidth() {
+            return this.width;
+        }
+
+        setLength(length) {
+            this.length = length;
+        }
+
+        setWidth(width) {
+            this.width = width;
+        }
+    }
+    let rect1 = new Rectangle(150,80);
+    document.write("diện tích :"+rect1.getArea()+"<br>");
+    document.write("chu vi :"+rect1.getPerimeter());
+</script>
+<canvas id="myCanvas" width="150"height="80"style="border: 1px solid red" ></canvas>
+<script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    ctx.fillStyle ="lightpink";
+    ctx.fillRect(10, 10, rect1.getLength(), rect1.getWidth());
+    ctx.strokeStyle="black";
+    ctx.strokeRect(10, 10, rect1.getLength(), rect1.getWidth());
+</script>
+</body>
+</html>
