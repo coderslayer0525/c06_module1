@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class LightFlash {
+        #ison;
+
+        constructor(ison) {
+            this.#ison = ison;
+        }
+
+        getIson() {
+            return this.#ison;
+        }
+
+        turnOff() {
+            this.#ison = false;
+            console.log(" den da TẮT");
+        }
+
+        turnOn() {
+            this.#ison = true;
+            console.log("den da BẬT");
+        }
+
+        setIson(ison) {
+            this.#ison = ison;
+        }
+    }
+
+    class SwitchButton {
+        #turn;
+        #light;
+
+        constructor(light) {
+            this.#light = light;
+            this.#turn = light.getIson();
+        }
+
+        pullButton() {
+            if (this.#light.getIson()) {
+                this.#light.turnOff();
+                this.#turn = false;
+            } else {
+                this.#light.turnOn();
+                this.#turn = true;
+            }
+        }
+
+        getTurn() {
+            return this.#turn;
+        }
+    }
+    let uLight = new LightFlash();
+    let uSwitch = new SwitchButton(uLight);
+    uSwitch.pullButton();
+    uSwitch.pullButton();
+    uSwitch.pullButton();
+    uSwitch.pullButton();
+    uSwitch.pullButton();
+    uSwitch.pullButton();
+    uSwitch.pullButton();
+    uSwitch.pullButton();
+    uSwitch.pullButton();
+    uSwitch.pullButton();
+
+</script>
+</body>
+</html>
