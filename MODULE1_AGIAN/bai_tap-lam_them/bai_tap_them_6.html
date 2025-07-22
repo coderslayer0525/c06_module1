@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt(" nhập nội dung :");
+
+    function checkString(str) {
+        let kyTu = [`a`, `e`, `i`, `o`, `u`];
+        let result = [];
+        for (let char of str.toLowerCase()) {
+            if (kyTu.includes(char)) {
+                result.push(char);
+            }
+        }
+        return result;
+    }
+    document.write(`số lượng nguyên âm trong mảng :` + [checkString(str).length] +  [checkString(str).join(" , ")]);
+</script>
+</body>
+</html>

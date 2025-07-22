@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple {
+        #name;
+        #weight;
+
+        constructor(name, weight) {
+            this.#name = name;
+            this.#weight = weight;
+        }
+
+        getName() {
+            return this.#name;
+        }
+
+        getWeight() {
+            return this.#weight;
+        }
+
+        setWeight(weight) {
+            this.#weight = weight;
+        }
+
+        bite(amount) {
+            if (this.#weight >= amount) {
+                this.#weight -= amount;
+                return amount;
+            }
+            return 0;
+        }
+    }
+
+    class Human {
+        #weight;
+        #name;
+        #sex
+
+        constructor(name, weight, sex) {
+            this.#name = name;
+            this.#weight = weight;
+            this.#sex = sex;
+        }
+
+        getName() {
+            return this.#name;
+        }
+
+        getWeight() {
+            return this.#weight;
+        }
+
+        getSex() {
+            return this.#sex;
+        }
+
+        setName(name) {
+            this.#name = name;
+        }
+
+        setWeight(weight) {
+            this.#weight = weight;
+        }
+
+        setSex(sex) {
+            this.#sex = sex;
+        }
+
+        say(text) {
+
+        }
+    }
+
+    class Adam extends Human {
+        #status;
+
+        constructor(name, weight, sex, status) {
+            super(name, weight, sex);
+            this.#status = status;
+        }
+
+        setStatus(status) {
+            this.#status = status;
+        }
+
+        getStatus() {
+            return this.#status;
+        }
+
+        say(text) {
+            console.log(this.getName() + ": ê EVA! :" + text);
+        }
+
+        takeFruit(fruit) {
+            let amount = fruit.bite(1);
+            if (amount > 0) {
+                this.setWeight(this.getWeight() + amount);
+                console.log(`${this.getName()} vừa ăn ${amount}g táo, vừa mập thêm: ${this.getWeight()}`);
+            } else {
+                console.log("hết cmn táo ");
+            }
+        }
+    }
+
+    class Eva extends Human {
+        #status;
+
+        constructor(name, weight, sex, status) {
+            super(name, weight, sex);
+            this.#status = status;
+        }
+
+        say(text) {
+            console.log(this.getName() + ": em muon an tao:" + text);
+        }
+
+        takeFruit(fruit) {
+            let amount = fruit.bite(1);
+            if (amount > 0) {
+                this.setWeight(this.getWeight() + amount);
+                console.log(`${this.getName()} vừa ăn ${amount}g táo, vừa mập thêm: ${this.getWeight()}`);
+            } else {
+                console.log("hết cmn táo ");
+            }
+        }
+    }
+
+    let apple = new Apple("Apple", 10);
+    let adam = new Adam("Adam", 60, "Male", "single");
+    let eva = new Eva("Eva", 50, "Female", "singleMom");
+
+    eva.say("Hai cho em di anh!!");
+    adam.say("Tự hái mà ăn đi em !");
+
+    eva.takeFruit(apple);
+    eva.takeFruit(apple);
+    eva.takeFruit(apple);
+    adam.say(" mày ăn tham thế !!!");
+    eva.takeFruit(apple);
+    eva.takeFruit(apple);
+    eva.takeFruit(apple);
+    adam.takeFruit(apple);
+    adam.takeFruit(apple);
+    eva.takeFruit(apple);
+    adam.takeFruit(apple);
+    console.log("hết cmn táo:"+ apple.getWeight());
+
+</script>
+</body>
+</html>

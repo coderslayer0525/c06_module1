@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = [];
+  let n = +prompt(" nhập phần tử :");
+  if(isNaN(n) || n <= 0) {
+    alert(" không hợp lệ : chỉ nhập số ");
+  } else {
+    for (let i = 0; i < n ; i++) {
+      let x = +prompt(`nhap phan tu ${i + 1}`);
+      arr.push(x);
+    }
+    alert("cac phan tu da nhap :" + arr.join(" , "));
+  }
+  alert("mang vua nhap : " + arr.join(" , "));
+  checkArray(arr);
+  function checkArray(arr){
+    for(let i = 0; i < arr.length; i++) {
+      if(arr[i] > arr[i + 1]){
+        alert("NO ! mảng không tăng dần.");
+        return;
+      }
+    }
+    alert("OK ! mảng  tăng dần .");
+  }
+</script>
+</body>
+</html>

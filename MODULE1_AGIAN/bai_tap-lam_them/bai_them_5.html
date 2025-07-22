@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n = +prompt("nhap phan tu");
+
+    if (isNaN(n) || n <= 0 || n % 2 !== 0) {
+        alert("khong hop le: chi nhap so chang");
+    } else {
+        for (let i = 0; i < n; i++) {
+            let x = +prompt(`nhap phan tu${i + 1}:`);
+            arr.push(x);
+        }
+        alert("các phần tử đã nhập :" + arr.join(" , "));
+    }
+    alert("mảng đã nhập : " + arr.join(" , "));
+    checkArray(arr);
+
+    function checkArray(arr) {
+        let check = true;
+        for (let i = 0; i < arr.length - 1; i+=2) {
+            if (arr[i] >= arr[i + 1]) {
+                check = false;
+                break;
+            }
+        }
+        if (check === true) {
+            alert("Ok");
+        } else {
+            alert("NO");
+        }
+    }
+
+</script>
+</body>
+</html>

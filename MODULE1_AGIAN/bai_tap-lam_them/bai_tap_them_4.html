@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt(" nhập nội dung");
+
+    function checkString(str) {
+        let inHoa = 0;
+        let inThuong = 0;
+
+        for (let char of str) {
+            if (char >= 'A' && char <= 'Z') {
+                inHoa++;
+            } else if (char >= 'a' && char <= 'z') {
+                inThuong++;
+            }
+        }
+        return inHoa === inThuong;
+    }
+
+    let result = checkString(str);
+    alert(result);
+</script>
+</body>
+</html>
