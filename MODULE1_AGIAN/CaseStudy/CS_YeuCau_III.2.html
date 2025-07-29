@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrA = [7, 2, 5, 3, 5, 3];
+    let arrB = [7, 2, 5, 4, 6, 3, 5, 3];
+    let result = [];
+    for (i = 0; i < arrB.length; i++) {
+        let value = arrB[i];
+        if (!arrA.includes(value) && !result.includes(value)) {
+            result.push(value);
+        }
+    }
+    alert(result);
+
+</script>
+</body>
+</html>

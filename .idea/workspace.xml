@@ -5,29 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cad6c969-edab-4956-a120-aab47c904c4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/CaseStudy/CS_YeuCau_I-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/CaseStudy/CS_YeuCau_II.1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/CaseStudy/CS_YeuCau_II.2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/CaseStudy/CS_YeuCau_II.3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/CaseStudy/CS_YeuCau_III.1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/CaseStudy/Test_Module-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/CaseStudy/Test_Modulte-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/Test_Module1/Module_1_test-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/Test_Module1/Module_1_test-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/Test_Module1/module_1_test-3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/Test_Module1/quan_ly_may_tinh.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/bai_tap-lam_them/bai_tap_them_10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/bai_tap-lam_them/bai_tap_them_11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/bai_tap-lam_them/bai_tap_them_7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/bai_tap-lam_them/bai_tap_them_8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/bai_tap-lam_them/bai_tap_them_9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/bai_tap-lam_them/quan_ly_san_pham.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/ss15_ham-day2/bai_tap_them_12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/ss15_ham-day2/bai_tap_them_13.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/ss15_ham-day2/bai_tap_them_14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/CaseStudy/CS_YeuCau_III.2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DỰ ÁN MODULE1/Bài Thi/bài 1/bài 2.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +113,7 @@
       <workItem from="1753678029976" duration="471000" />
       <workItem from="1753684569785" duration="11896000" />
       <workItem from="1753752502507" duration="13023000" />
+      <workItem from="1753777421706" duration="2098000" />
     </task>
     <servers />
   </component>
