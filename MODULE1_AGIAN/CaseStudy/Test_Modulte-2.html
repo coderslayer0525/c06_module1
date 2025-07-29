@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("nhap noi dung");
+    let result = checkString(str);
+
+    function checkString(str) {
+        let inHoa = 0;
+        let inThuong = 0;
+        for (let char of str) {
+            if (char >= 'A' && char <= 'Z') {
+                inHoa++;
+            }
+            if (char >= 'a' && char <= 'z') {
+                inThuong++;
+            }
+        }
+        return [inHoa, inThuong];
+    }
+
+    alert(result);
+
+</script>
+</body>
+</html>

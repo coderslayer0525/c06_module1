@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra cac canh cua tam giac vuong</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n = +prompt("nhập số nguyen");
+    while (isNaN(n) || n < 0 || n > 15 || n % 3 !== 0) {
+        alert(" chỉ nhập số nguyên dương + bội của 3");
+        n = +prompt("nhập lại cac phần tử ");
+    }
+    for (i = 0; i < n; i++) {
+        let x = +prompt(`theem vao mang phan tu thứ : ${i + 1}`);
+        arr.push(x);
+    }
+    alert("mảng mới gồm các phần tử :" + arr.join(","));
+    checkArray(arr);
+
+    function checkArray(arr) {
+        let result = true;
+
+
+        for (let i = 0; i < n; i += 3) {
+            let [a, b, c] = [arr[i], arr[i + 1], arr[i + 2]].sort((x, y) => x - y);
+            if (a ** 2 + b ** 2 !== c ** 2) {
+                result = false;
+                alert("NO");
+                break;
+            }
+            alert("OK");
+        }
+    }
+</script>
+</body>
+</html>

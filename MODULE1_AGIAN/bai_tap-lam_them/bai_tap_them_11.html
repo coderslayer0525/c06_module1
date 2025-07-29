@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt(" nhập nội dung :");
+    str= checkString(str);
+    function checkString(str){
+        return str.replace(/[a-zA-Z0-9]/g, '');
+    }
+  alert(str);
+</script>
+</body>
+</html>

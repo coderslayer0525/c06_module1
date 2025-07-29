@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n = +prompt("nhap số lượng các phần tử");
+    if (isNaN(n) || n <= 0) {
+        alert(" chỉ nhập số !");
+    } else {
+        for (let i = 0; i < n; i++) {
+            let x = +prompt(`thêm phần tử thứ ${i + 1}`);
+            arr.push(x);
+        }
+    }
+    alert("mảng mới gồm các phần tử :" + arr.join(","));
+    checkArray(arr);
+
+    function checkArray(arr) {
+        if (arr.length === 0) {
+            alert("mảng rỗng");
+            return;
+        } else {
+            let sum = 0;
+            for (let i = 0; i < arr.length; i++) {
+                sum += arr[i];
+            }
+            let average = sum / arr.length;
+            alert(`giá trị trung bình của mảng :${average}`);
+            let foundID = false;
+            for (let i = 0; i < arr.length; i++) {
+                if (Math.abs(arr[i] - average) < 0.001) {
+                    alert(`phần tử : ${arr[i]}  bằng hoặc gần bằng giá trị trung bình của mảng`);
+                    foundID = true;
+                }
+            }
+            if (!foundID) {
+                alert("không tìm thấy phần tử nào bằng hoặc gần bằng giá trị trung bình của mảng");
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

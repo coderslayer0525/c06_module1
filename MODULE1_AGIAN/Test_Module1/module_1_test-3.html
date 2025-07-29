@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Quản lý danh bạ điện thoại</h2>
+<form id="addform">
+    Số Điện Thoại: <input type="text" id="SDT"><br>
+    Tên chủ danh bạ: <input type="text" id="listDT"><br>
+    Địa chỉ : <input type="text" id="address"><br>
+    <button type="submit">Thêm</button>
+</form>
+
+<div id="table"></div>
+
+<form id="del">
+    <input type="text" id="delName">
+    <button type="submit">Nhập tên & xóa</button>
+</form>
+
+<script>
+    class MyMobile {
+        #telePhone;
+        #name;
+        #address;
+
+        constructor(telePhone, name, address) {
+            this.#telePhone = telePhone;
+            this.#name = name;
+            this.#address = address;
+        }
+
+        get telePhone() {
+            return this.#telePhone;
+        }
+
+        get name() {
+            return this.#name;
+        }
+
+        get address() {
+            return this.#address;
+        }
+
+        set telePhone(telePhone) {
+            this.#telePhone = telePhone;
+        }
+
+        set name(name) {
+            this.#name = name;
+        }
+
+        set address(address) {
+            this.#address = address;
+        }
+    }
+
+    let mobiles = [new MyMobile("0909999999", "Nghiêm Ngốc Nghếch", "01/Trần Phú")];
+
+    class ManagerMobile {
+        constructor(mobiles) {
+            this.mobiles = mobiles;
+        }
+
+        xoaTheoTen(name) {
+            let oldLength = this.mobiles.length;
+            this.mobiles = this.mobiles.filter(mobile => mobile.name.toLowerCase() !== name.toLowerCase());
+
+            if (this.mobiles.length === oldLength) {
+                alert("Không tìm thấy tên cần xóa.");
+            } else {
+                alert("Xóa thành công.");
+                this.display();
+            }
+        }
+
+        display() {
+            let stringTable = `<table border="1" style="border-collapse: collapse">
+                <tr>
+                    <th>SDT</th>
+                    <th>Tên chủ danh bạ</th>
+                    <th>Địa chỉ</th>
+                </tr>`;
+            for (let mobile of this.mobiles) {
+                stringTable += `<tr>
+                    <td>${mobile.telePhone}</td>
+                    <td>${mobile.name}</td>
+                    <td>${mobile.address}</td>
+                </tr>`;
+            }
+            stringTable += `</table>`;
+            document.getElementById("table").innerHTML = stringTable;
+        }
+
+        them(mobile) {
+            this.mobiles.push(mobile);
+            this.display();
+        }
+    }
+
+    let manager = new ManagerMobile(mobiles);
+    manager.display();
+
+    document.getElementById("addform").addEventListener("submit", function (e) {
+        e.preventDefault();
+        let telePhone = document.getElementById("SDT").value.trim();
+        let name = document.getElementById("listDT").value.trim();
+        let address = document.getElementById("address").value.trim();
+
+        if (!telePhone || !name || !address) {
+            alert("Nhập sai, yêu cầu nhập lại");
+            return;
+        }
+
+        let newMB = new MyMobile(telePhone, name, address);
+        manager.them(newMB);
+        this.reset();
+    });
+
+    document.getElementById("del").addEventListener("submit", function (e) {
+        e.preventDefault();
+        let nameToDel = document.getElementById("delName").value.trim();
+
+        if (!nameToDel) {
+            alert("Nhập tên cần xóa");
+            return;
+        }
+
+        manager.xoaTheoTen(nameToDel);
+        this.reset();
+    });
+</script>
+</body>
+</html>

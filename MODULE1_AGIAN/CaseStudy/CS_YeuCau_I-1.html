@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let str = prompt("nhập nội dung");
+
+  if(str === null || str.length !== 1 || !/[a-zA-Z]/.test(str)){
+    alert(" nhập ký tự trong bảng chữ cái");
+  } else {
+      let lowerStr = str.toLowerCase();
+      if (["a", "e", "i", "o", "u"].includes(lowerStr) || ["A","E","I","O","U"].includes(lowerStr)) {
+        alert(`${str} là nguyên âm`);
+      } else {
+        alert(`${str} là phụ âm`);
+      }
+  }
+
+</script>
+
+</body>
+</html>

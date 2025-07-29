@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n = +prompt("nhao vao so luong phan tu:");
+    while (isNaN(n) || n <= 0 || n > 50) {
+        alert("chi nhap so nguyen duong");
+        n = +prompt("nhap vao so luong phan tu");
+    }
+    for (let i = 0; i < n; i++) {
+        let x = +prompt(`nhap vao phan tu thu : ${i + 1}`);
+        arr.push(x);
+    }
+    alert("mang gom cac phan tu" + arr.join(","));
+
+    isPrime(n);
+
+    function isPrime(n) {
+        if (n < 2) return false;
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i === 0) return false
+        }
+        return true;
+    }
+
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (isPrime(i)) {
+            sum += arr[i];
+        }
+    }
+    alert("tong cac phan tu co vi tri la so nguyen to :" + sum);
+
+</script>
+</body>
+</html>

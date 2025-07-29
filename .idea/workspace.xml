@@ -5,9 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cad6c969-edab-4956-a120-aab47c904c4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/bai_tap-lam_them/Cong_tac_den.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/CaseStudy/CS_YeuCau_I-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/CaseStudy/CS_YeuCau_II.1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/CaseStudy/CS_YeuCau_II.2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/CaseStudy/CS_YeuCau_II.3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/CaseStudy/CS_YeuCau_III.1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/CaseStudy/Test_Module-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/CaseStudy/Test_Modulte-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/Test_Module1/Module_1_test-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/Test_Module1/Module_1_test-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/Test_Module1/module_1_test-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/Test_Module1/quan_ly_may_tinh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/bai_tap-lam_them/bai_tap_them_10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/bai_tap-lam_them/bai_tap_them_11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/bai_tap-lam_them/bai_tap_them_7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/bai_tap-lam_them/bai_tap_them_8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/bai_tap-lam_them/bai_tap_them_9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/bai_tap-lam_them/quan_ly_san_pham.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/ss15_ham-day2/bai_tap_them_12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/ss15_ham-day2/bai_tap_them_13.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE1_AGIAN/ss15_ham-day2/bai_tap_them_14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODULE1_AGIAN/bai_tap-lam_them/Adam_Eva.html" beforeDir="false" afterPath="$PROJECT_DIR$/MODULE1_AGIAN/bai_tap-lam_them/Adam_Eva.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DỰ ÁN MODULE1/Bài Thi/bài 1/bài 2.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +59,14 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.bai_tap_them_14.html.executor&quot;: &quot;Debug&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/This PC/Desktop/LGN/CODEGYM/modue 1/bai_tap/MO1DEMO/MODULE1_AGIAN/bai_tap-lam_them&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/This PC/Desktop/LGN/CODEGYM/modue 1/bai_tap/MO1DEMO/MODULE1_AGIAN/Test_Module1&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -56,11 +77,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\This PC\Desktop\LGN\CODEGYM\modue 1\bai_tap\MO1DEMO\MODULE1_AGIAN\Test_Module1" />
+      <recent name="C:\Users\This PC\Desktop\LGN\CODEGYM\modue 1" />
+      <recent name="C:\Users\This PC\Desktop\LGN\CODEGYM\modue 1\bai_tap\MO1DEMO\MODULE1_AGIAN\CaseStudy" />
       <recent name="C:\Users\This PC\Desktop\LGN\CODEGYM\modue 1\bai_tap\MO1DEMO\MODULE1_AGIAN\bai_tap-lam_them" />
       <recent name="C:\Users\This PC\Desktop\LGN\CODEGYM\modue 1\bai_tap\MO1DEMO\MODULE1_AGIAN\ss16_OOP" />
-      <recent name="C:\Users\This PC\Desktop\LGN\CODEGYM\modue 1\bai_tap\MO1DEMO\MODULE1_AGIAN\ss15_ham-day2" />
-      <recent name="C:\Users\This PC\Desktop\LGN\CODEGYM\modue 1\bai_tap\MO1DEMO\MODULE1_AGIAN\ss14_ham-day1" />
-      <recent name="C:\Users\This PC\Desktop\LGN\CODEGYM\modue 1\bai_tap\MO1DEMO\MODULE1_AGIAN\ss13_mang-day2" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -100,7 +121,19 @@
       <workItem from="1752809521658" duration="10411000" />
       <workItem from="1753033551093" duration="4379000" />
       <workItem from="1753060431154" duration="20837000" />
-      <workItem from="1753148421974" duration="14346000" />
+      <workItem from="1753148421974" duration="21215000" />
+      <workItem from="1753198843619" duration="242000" />
+      <workItem from="1753240037447" duration="1043000" />
+      <workItem from="1753253052570" duration="12825000" />
+      <workItem from="1753320026345" duration="14478000" />
+      <workItem from="1753407930374" duration="107000" />
+      <workItem from="1753431136939" duration="3041000" />
+      <workItem from="1753434536746" duration="4440000" />
+      <workItem from="1753664511405" duration="2040000" />
+      <workItem from="1753667548668" duration="9299000" />
+      <workItem from="1753678029976" duration="471000" />
+      <workItem from="1753684569785" duration="11896000" />
+      <workItem from="1753752502507" duration="13023000" />
     </task>
     <servers />
   </component>
@@ -131,6 +164,11 @@
           <url>file://$PROJECT_DIR$/chuyen doi tien te/ungdungchuyendoitiente.html</url>
           <line>48</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/MODULE1_AGIAN/CaseStudy/CS_YeuCau_III.1.html</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

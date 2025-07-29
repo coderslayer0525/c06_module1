@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <h2>
+    <input id="inum" type="number"placeholder=" nhập tien luong vao day ">
+    <select id="opt">
+        <option id="op1" value="0.2">lương trên 15 triệu(20%)</option>
+        <option id="op2" value="0.1">lương từ 7-15 triệu(10%)</option>
+        <option id="op3" value="0.05">lương dưới 7 triệu</option>
+    </select>
+        <button id="btn"type="submit">Tính</button>
+        <p style="text-align: center" id="result"></p>
+    </h2>
+</form>
+<script>
+    let luong = document.getElementById("inum");
+    let thue = document.getElementById("opt");
+    let btn = document.getElementById("btn");
+    btn.addEventListener("click",submit);
+    function submit(){
+        let inum = document.getElementById("inum").value;
+        let thue = document.getElementById("opt").value;
+        if(isNaN(inum) || inum <= 0){
+            alert("vui lòng nhập số");
+        }
+        const thuethunhap = inum * thue;
+        const result = inum - thuethunhap
+        alert(`tiền lương của nnhan vien sau khi trừ thue :${result}`);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Thêm máy tính mới</h2>
+<form id="addForm">
+    Mã máy: <input type="text" id="maMay"><br>
+    Tên máy: <input type="text" id="tenMay"><br>
+    Hãng sản xuất: <input type="text" id="hangSX"><br>
+    Giá bán: <input type="number" id="giaBan"><br>
+    <button type="submit">Thêm máy</button>
+    <button type="button"onclick="manager.sort(computers)" >sap xep</button>
+</form>
+<div id ="table"></div>
+<script>
+    class MyComputer {
+        #maMay;
+        #tenMay;
+        #hangSX;
+        #giaBan;
+
+        constructor(maMay, tenMay, hangSX, giaBan) {
+            this.#maMay = maMay;
+            this.#tenMay = tenMay;
+            this.#hangSX = hangSX;
+            this.#giaBan = giaBan;
+        }
+
+        get maMay() {
+            return this.#maMay;
+        }
+
+        get tenMay() {
+            return this.#tenMay;
+        }
+
+        get hangSX() {
+            return this.#hangSX;
+        }
+
+        get giaBan() {
+            return this.#giaBan;
+        }
+
+        set maMay(maMay) {
+            this.#maMay = maMay;
+        }
+
+        set tenMay(tenMay) {
+            this.#tenMay = tenMay;
+        }
+
+        set hangSX(hangSX) {
+            this.#hangSX = hangSX;
+        }
+
+        set giaBan(giaBan) {
+            this.#giaBan = giaBan;
+        }
+    }
+
+    let computers = [new MyComputer("2012", "IPhone", "Apple", "25000")];
+
+    class ManagerPC {
+        constructor(computers) {
+            this.computers = computers;
+        }
+
+        display() {
+            let stringTable = `<table border ="1"style="border-collapse: collapse">
+<tr>
+<th>Ma may</th>
+<th>ten may</th>
+<th>ten Hang SX</th>
+<th>gia ban</th>
+</tr>`;
+            for (let i = 0; i < computers.length; i++) {
+                stringTable += `<tr>
+<td>${this.computers[i].maMay}</td>
+<td>${this.computers[i].tenMay}</td>
+<td>${this.computers[i].hangSX}</td>
+<td>${this.computers[i].giaBan}</td>
+</tr>`;
+            }
+            stringTable += `</table>`
+            document.getElementById("table").innerHTML = stringTable;
+        }
+
+        sort(arr){
+            arr.sort(function (a,b){
+                return a.giaBan-b.giaBan;
+            });
+            this.display();
+        }
+        themMay(may){
+            this.computers.push(may);
+            this.display();
+        }
+    }
+    let manager = new ManagerPC(computers);
+    manager.display();
+    document.getElementById("addForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+
+        let maMay = document.getElementById("maMay").value.trim();
+        let tenMay = document.getElementById("tenMay").value.trim();
+        let hangSX = document.getElementById("hangSX").value.trim();
+        let giaBan = parseFloat(document.getElementById("giaBan").value);
+
+        if (!maMay || !tenMay || !hangSX || isNaN(giaBan)) {
+            alert("nhap sai cu du lieu");
+            return;
+        }
+
+        let newPC = new MyComputer(maMay, tenMay, hangSX, giaBan);
+        manager.themMay(newPC);
+
+    });
+</script>
+</body>
+</html>

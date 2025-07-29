@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ham truyen vao chuoi ky tu</title>
+</head>
+<body>
+<script>
+    input = prompt("Nhập nội dung");
+
+    let result = checkArray(input);
+
+    function checkArray(mang) {
+        let cacTu = mang.trim().split(/\s+/);
+        let vietTat = [];
+        for (let i = 0; i < cacTu.length; i++) {
+            let tu = cacTu[i];
+            if (tu.length > 0) {
+                vietTat += tu[0].toUpperCase();
+            }
+        }
+        return vietTat;
+    }
+
+    alert(result);
+</script>
+</body>
+</html>

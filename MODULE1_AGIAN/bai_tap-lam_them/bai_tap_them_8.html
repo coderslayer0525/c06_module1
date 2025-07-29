@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n = +prompt("số lượng phần tử :");
+    if (isNaN(n) || n <= 0) {
+        alert("yeu cau chi nhap so");
+    } else {
+        for (let i = 0; i < n; i++) {
+            let x = +prompt(`phan tu thu ${i + 1}`);
+            arr.push(x);
+        }
+        alert("cac phan tu muon them :" + arr.join(" , "));
+    }
+    alert("mang da nhap gom co :" + arr.join(" , "));
+    checkArray(arr);
+
+    function checkArray(arr) {
+        if (arr.length === 0) {
+            alert("empty");
+            return;
+        }
+
+        let max = arr[0];
+        let count = 1;
+
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+                count = 1;
+            } else if (arr[i] === max) {
+                count++;
+            }
+        }
+        alert(`giá trị lớn nhất : ${max} xuất hiện : ${count}`);
+    }
+</script>
+
+</body>
+</html>

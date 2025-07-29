@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let a = +prompt("chỉ nhập số nguyên");
+    if (isNaN(a) || a <= 0) {
+        alert("chỉ nhập số dương")
+    } else for (let i = 0; i < a; i++) {
+        let x = +prompt(`nhập vào  phần tử thứ : ${i + 1}`);
+        arr.push(x);
+    }
+    alert("mảng vừa nhập : " + arr.join(","));
+
+    let b = prefixSums(arr);
+
+    function prefixSums(a) {
+        let b = [];
+        let sum = 0;
+        for (let i = 0; i < a.length; i++) {
+            sum += a[i];
+            b.push(sum);
+        }
+        return b;
+    }
+
+    alert("mảng prefixSums : " + b.join(","))
+</script>
+</body>
+</html>

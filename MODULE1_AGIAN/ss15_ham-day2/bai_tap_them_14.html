@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let input = prompt(" Nhập tên học sinh : ");
+  let result =checkString(input);
+  if (result){
+    alert("đúng : có viết hoa");
+  }else {
+    alert("sai : phải viết hoa chữ cái đầu của tên riêng");
+  }
+  function checkString(input){
+    let inHoa = 0;
+    let inThuong = 0;
+    for(let char of input){
+      if(char >= 'A' && char <= 'Z'){
+        inHoa++;
+      }else if(char >= 'a' &&  char <= 'z'){
+        inThuong++;
+      }
+    }
+    return inHoa === inThuong;
+  }
+
+</script>
+</body>
+</html>

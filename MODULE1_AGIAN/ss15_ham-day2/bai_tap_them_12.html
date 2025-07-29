@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = prompt("Nhập vào ngày (dd/mm/yyyy):");
+    let result = checkDate(input);
+
+    if (!result) {
+        alert("Sai định dạng!");
+    } else {
+        alert(`Đúng định dạng: ${input}`);
+    }
+
+    function checkDate(input) {
+        return /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/\d{4}$/.test(input);
+    }
+</script>
+</body>
+</html>

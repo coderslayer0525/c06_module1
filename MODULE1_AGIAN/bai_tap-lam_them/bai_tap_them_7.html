@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tit</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n = +prompt(" nhập phần tử :");
+    if (isNaN(n) || n <= 0) {
+        alert(" không hợp lệ : chỉ nhập số  dương");
+    } else {
+        for (let i = 0; i < n;) {
+            let x = +prompt(`nhap phan tu ${i + 1}`);
+            if (x > 10 && x < 100) {
+                arr.push(x);
+                i++;
+            } else {
+                alert("phần tử phải lớn hơn 10, nhở hơn 100:");
+            }
+        }
+        alert("cac phan tu da nhap :" + arr.join(" , "));
+    }
+    alert("mang vua nhap : " + arr.join(" , "));
+    checkArray(arr);
+
+    function checkArray(arr) {
+        let result = arr.filter(num => {
+            let hangChuc = Math.floor(num / 10);
+            let hangDonVi = num % 10;
+            return hangDonVi > hangChuc;
+        });
+
+        if (result.length > 0) {
+            alert(" Các phần tử có hàng đơn vị > hàng chục: " + result.join(", "));
+        } else {
+            alert(" Không có phần tử nào có hàng đơn vị lớn hơn hàng chục.");
+        }
+    }
+</script>
+</body>
+</html>
