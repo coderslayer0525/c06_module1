@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrA = [5,2,5];
+    let arrB = [6,3,4];
+    maxIndex = 0;
+    let maxResult = arrA[0] / arrB[0];
+    checkArray(arrA,arrB);
+    function checkArray(arrA,arrB){
+        for(let i = 1 ; i < arrA.length;i++){
+            let maxValue = arrA[i]/ arrB[i];
+            if(maxValue > maxResult){
+                maxValue = maxResult;
+                maxIndex = i;
+            }
+        }
+        return maxIndex
+    }
+    let ketQua = checkArray(arrA,arrB);
+    alert("5/4 la phan so lon nhat, co chi so gan bang : " +ketQua);
+
+
+</script>
+</body>
+</html>
