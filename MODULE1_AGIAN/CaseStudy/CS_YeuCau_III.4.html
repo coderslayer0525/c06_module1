@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let menu = " chon thuc uong: \n1. cafe\n2. camvat\n3 . carrot\n4. cachua\n5. nuocloc\n6. nuocdua\n7. ngung oder";
+    let gia ={
+        1:20000,
+        2:25000,
+        3:22000,
+        4:23000,
+        5:10000,
+        6:15000
+    };
+    let tongBill = 0;7
+    let option = 0;
+
+    while (option !== 7) {
+        option = +prompt(menu);
+
+        if (option >= 1 && option <= 6) {
+            let soLy = +prompt("Bạn muốn gọi bao nhiêu ly?");
+            if (isNaN(soLy) || soLy <= 0) {
+                alert("Vui lòng nhập số lượng hợp lệ!");
+                continue;
+            }
+
+            let orderBill = gia[option] * soLy;
+            tongBill += orderBill;
+            alert(`gia: ${gia[option]} VNĐ\nSố lượng: ${soLy}\nthanh tien: ${orderBill} VNĐ`);
+        } else if (option === 7) {
+            alert("ngung oder?");
+        } else {
+            alert("chi chon trong menu!");
+        }
+    }
+
+    alert(`tong tien thanh toan : ${tongBill}`);
+</script>
+</body>
+</html>
